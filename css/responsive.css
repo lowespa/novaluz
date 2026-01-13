@@ -1,0 +1,247 @@
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 1.9rem;
+    }
+    
+    .hero-container, .about-container, .location-container, .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero {
+        padding-top: 7rem;
+    }
+    
+    .hero-image {
+        order: -1;
+        height: 300px;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .about-image {
+        height: 300px;
+    }
+    
+    .hero-img {
+        object-position: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.1rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
+    
+    .desktop-nav ul {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .testimonial-slider {
+        height: 350px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    .modality-container {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-image {
+        height: 300px;
+    }
+    
+    .about-image i {
+        font-size: 5rem;
+    }
+    
+    /* Iconos flotantes responsivos */
+    .floating-icons {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .floating-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+    
+    .icon-tooltip {
+        display: none; /* Ocultar tooltips en móviles */
+    }
+}
+
+@media (max-width: 576px) {
+    :root {
+        --spacing-lg: 2rem;
+        --spacing-xl: 3rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .hero-image, .about-image {
+        height: 250px;
+    }
+    
+    .hero-img {
+        object-fit: cover;
+    }
+    
+    .about-image i {
+        font-size: 4rem;
+    }
+    
+    .testimonial-slider {
+        height: 400px;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-placeholder {
+        height: 250px;
+    }
+    
+    .map-placeholder i {
+        font-size: 3rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .floating-icons {
+        bottom: 15px;
+        right: 15px;
+        gap: 10px;
+    }
+    
+    .floating-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .service-card, .modality-card {
+        padding: var(--spacing-md);
+    }
+    
+    .floating-icons {
+        bottom: 10px;
+        right: 10px;
+    }
+    
+    .floating-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+    
+    .hero-image {
+        height: 200px;
+    }
+}
+
+/* Para pantallas muy altas, ajustar posición de iconos flotantes */
+@media (min-height: 900px) {
+    .floating-icons {
+        bottom: 40px;
+        right: 40px;
+    }
+}
+
+/* Ocultar iconos flotantes en impresión */
+@media print {
+    .floating-icons {
+        display: none;
+    }
+    
+    .hero-image {
+        display: none;
+    }
+}
+
+/* Optimización para imágenes de fondo */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-image {
+        height: 250px;
+    }
+}
+
+/* Ajustes para tablets en modo retrato */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero-image {
+        height: 350px;
+    }
+}
